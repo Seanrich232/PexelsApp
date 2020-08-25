@@ -1,4 +1,4 @@
-package com.example.pexels.utils.extensions
+package com.example.pexelsapp.utils.extensions
 
 import android.view.View
 import android.widget.ImageView

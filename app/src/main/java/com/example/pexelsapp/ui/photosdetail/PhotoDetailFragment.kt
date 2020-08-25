@@ -6,12 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
-import com.example.pexels.utils.extensions.loadUrl
 import com.example.pexelsapp.databinding.FragmentPhotoDetailBinding
 import com.example.pexelsapp.utils.Resource
 import com.example.pexelsapp.data.model.Photo
-import com.example.pexels.utils.extensions.toast
 import com.example.pexelsapp.utils.autoCleared
+import com.example.pexelsapp.utils.extensions.loadUrl
+import com.example.pexelsapp.utils.extensions.toast
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

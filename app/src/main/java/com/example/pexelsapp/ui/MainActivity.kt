@@ -3,9 +3,7 @@ package com.example.pexelsapp.ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
-import com.example.pexelsapp.R
 import com.example.pexelsapp.databinding.ActivityMainBinding
-import com.example.pexelsapp.di.AppModule
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

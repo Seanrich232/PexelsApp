@@ -1,9 +1,8 @@
-package com.example.tagyourit.ui.photos
+package com.example.pexelsapp.ui.photos
 
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.ViewModel
-import com.example.tagyourit.data.repo.PhotoRepo
-import retrofit2.Response
+import com.example.pexelsapp.data.repo.PhotoRepo
 
 
 class PhotoViewModel @ViewModelInject constructor(

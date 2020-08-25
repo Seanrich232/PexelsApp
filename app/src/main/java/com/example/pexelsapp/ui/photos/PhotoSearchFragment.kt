@@ -9,13 +9,13 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.pexelsapp.utils.autoCleared
 import com.example.pexelsapp.R
 import com.example.pexelsapp.databinding.FragmentPhotoSearchBinding
 import dagger.hilt.android.AndroidEntryPoint
 import com.example.pexelsapp.utils.Resource
-import com.example.pexels.utils.extensions.toast
-import com.example.pexelsapp.utils.autoCleared
-import com.example.tagyourit.ui.photos.PhotoViewModel
+import com.example.pexelsapp.utils.extensions.toast
+import java.util.*
 
 @AndroidEntryPoint
 class PhotoSearchFragment : Fragment(), PhotoAdapter.PhotoItemListener {
@@ -56,7 +56,6 @@ class PhotoSearchFragment : Fragment(), PhotoAdapter.PhotoItemListener {
                 }
                 Resource.Status.LOADING ->
                     context?.toast(resource.message)
-
             }
         })
     }

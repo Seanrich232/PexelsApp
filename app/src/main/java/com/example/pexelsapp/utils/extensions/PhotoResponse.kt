@@ -1,4 +1,4 @@
-package com.example.pexels.utils.extensions
+package com.example.pexelsapp.utils.extensions
 
 import retrofit2.Response
 
