@@ -49,13 +49,14 @@ class PhotoSearchFragment : Fragment(), PhotoAdapter.PhotoItemListener {
         viewModel.photos.observe(viewLifecycleOwner, { resource ->
             when (resource.status) {
                 Resource.Status.SUCCESS -> {
+                    binding.progressBar.visibility = View.GONE
                     if (!resource.data.isNullOrEmpty()) adapter.setPhotos(ArrayList(resource.data))
                 }
                 Resource.Status.ERROR -> {
                     context?.toast(resource.message)
                 }
                 Resource.Status.LOADING ->
-                    context?.toast(resource.message)
+                    binding.progressBar.visibility = View.VISIBLE
             }
         })
     }

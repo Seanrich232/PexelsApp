@@ -57,7 +57,7 @@ class PhotoViewHolder(
     fun bind(item: Photo) {
         this.photo = item
         vBind.TvPhotographer.text = item.photographer
-        vBind.IvPhoto.loadUrl(item.src?.medium, 50, 50)
+        vBind.IvPhoto.loadUrl(item.src?.medium, 170, 170)
     }
 
     override fun onClick(v: View?) {
