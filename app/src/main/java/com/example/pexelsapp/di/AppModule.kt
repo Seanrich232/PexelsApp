@@ -1,6 +1,8 @@
 package com.example.pexelsapp.di
 
 import android.content.Context
+import com.example.pexelsapp.data.api.PhotoDataSource
+import com.example.pexelsapp.data.api.PhotoService
 import com.squareup.moshi.Moshi
 import dagger.Module
 import dagger.Provides
@@ -40,7 +42,7 @@ object AppModule {
     @Provides
     fun provideRepository(remoteDataSource: PhotoDataSource,
                           localDataSource: PhotoDao) =
-        PhotoRepo(remoteDataSource, localDataSource)
+         (remoteDataSource, localDataSource)
 
     @Singleton
     @Provides
