@@ -17,5 +17,4 @@ data class Size(
     val portrait: String? = null,
     val small: String? = null,
     val tiny: String? = null
-
 ) : Parcelable

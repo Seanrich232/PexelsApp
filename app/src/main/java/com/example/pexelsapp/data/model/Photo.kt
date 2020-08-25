@@ -20,5 +20,4 @@ data class Photo(
     val photographer_url: String? = null,
     @Embedded val src: Size? = null,
     val url: String? = null
-
 ) : Parcelable

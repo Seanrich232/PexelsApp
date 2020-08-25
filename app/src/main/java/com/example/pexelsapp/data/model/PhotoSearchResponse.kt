@@ -12,5 +12,4 @@ data class PhotoSearchResponse(
     val per_page: Int? = null,
     val photos: List<Photo>? = null,
     val total_results: Int? = null
-
 ) : Parcelable
