@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import com.example.pexels.utils.extensions.loadUrl
 import com.example.pexelsapp.databinding.FragmentPhotoDetailBinding
 import com.example.pexelsapp.utils.Resource
 import com.example.pexelsapp.data.model.Photo
@@ -57,10 +58,7 @@ class PhotoDetailFragment : Fragment() {
     private fun bindPhoto(photo: Photo) {
         binding.photographer.text = photo.photographer
         binding.liked.text = photo.liked.toString()
-        Glide.with(binding.root)
-            .load(photo.src?.medium)
-            .transform(CircleCrop())
-            .into(binding.IvPhoto)
+        binding.IvPhoto.loadUrl(photo.src?.original)
     }
 
 }
