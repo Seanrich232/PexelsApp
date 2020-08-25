@@ -13,7 +13,7 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.tagyourit.ui.MainActivity">
+        <activity android:name="com.example.pexelsapp.ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
