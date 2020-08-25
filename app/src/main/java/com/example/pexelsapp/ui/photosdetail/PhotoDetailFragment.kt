@@ -58,7 +58,7 @@ class PhotoDetailFragment : Fragment() {
     private fun bindPhoto(photo: Photo) {
         binding.photographer.text = photo.photographer
         binding.liked.text = photo.liked.toString()
-        binding.IvPhoto.loadUrl(photo.src?.original)
+        binding.IvPhoto.loadUrl(photo.src?.original, 200, 200)
     }
 
 }
