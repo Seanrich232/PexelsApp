@@ -5,16 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.viewModels
 import com.example.pexelsapp.databinding.FragmentPhotoDetailBinding
 import com.example.pexelsapp.utils.Resource
-import com.example.pexelsapp.R
 import com.example.pexelsapp.data.model.Photo
-import com.example.pexelsapp.ui.photosdetail.PhotoDetailViewModel
-import com.example.pexelsapp.utils.extensions.toast
+import com.example.pexels.utils.extensions.toast
+import com.example.pexelsapp.utils.autoCleared
 import dagger.hilt.android.AndroidEntryPoint
-import java.util.Observer
 
 @AndroidEntryPoint
 class PhotoDetailFragment : Fragment() {
