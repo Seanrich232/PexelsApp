@@ -10,7 +10,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pexelsapp.data.model.Photo
 import com.example.pexelsapp.databinding.PhotoItemBinding
-import com.example.pexelsapp.utils.extensions.loadUrl
+import com.example.pexels.utils.extensions.loadUrl
 
 class PhotoAdapter(private val listener: PhotoItemListener) :
     RecyclerView.Adapter<PhotoViewHolder>() {

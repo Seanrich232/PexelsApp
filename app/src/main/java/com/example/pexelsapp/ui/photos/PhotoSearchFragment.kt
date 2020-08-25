@@ -13,7 +13,9 @@ import com.example.pexelsapp.R
 import com.example.pexelsapp.databinding.FragmentPhotoSearchBinding
 import dagger.hilt.android.AndroidEntryPoint
 import com.example.pexelsapp.utils.Resource
-import com.example.pexelsapp.utils.extensions.toast
+import com.example.pexels.utils.extensions.toast
+import com.example.pexelsapp.utils.autoCleared
+import com.example.tagyourit.ui.photos.PhotoViewModel
 
 @AndroidEntryPoint
 class PhotoSearchFragment : Fragment(), PhotoAdapter.PhotoItemListener {
