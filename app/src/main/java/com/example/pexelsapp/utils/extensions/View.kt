@@ -16,7 +16,8 @@ fun ImageView.loadUrl(url: String?, width: Int, height: Int) {
         .into(this)
 }
 
-fun View.show(show: Boolean? = true) {
+
+fun View.showView(show: Boolean? = true) {
     visibility = when (show) {
         true -> View.VISIBLE
         false -> View.GONE
